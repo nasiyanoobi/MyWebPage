@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Breaking Barriers, Not Systems - Noobi Asheer</title>
+    <title>Noobi Asheer - Cybersecurity Portfolio</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self';">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script defer src="scripts.js"></script>
 </head>
 <body>
     <!-- Header Section -->
-    <header>
+    <header class="fixed-header">
         <h1>Welcome to My Cybersecurity Portfolio- Noobi Asheer</h1>
         <nav>
             <ul>
                 <li><a href="#about">About Me</a></li>
-                <li><a href="#Labs">My Cybersecurity Labs</a></li>
+                <li><a href="#labs">Labs</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#resume">Resume</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -22,11 +24,9 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
-    <main>
-        <!-- About Section -->
-        <section id="about">
-            <h2>About Me</h2>
+    <section id="about" class="section">
+        <div class="content">
+            <h1>Noobi Asheer</h1>
             <p>
                 Hello! I'm Noobi, a passionate cybersecurity student specializing in 
                 <strong>ethical hacking</strong>, <strong>digital forensics</strong>, and <strong>threat analysis</strong>.
@@ -36,91 +36,78 @@
                 I thrive on solving complex challenges and continuously enhancing my skills through hands-on projects, certifications, and learning opportunities. 
                 Let’s connect to secure the future together!
             </p>
-        </section>
+        </div>
+    </section>
 
-            
-        <section id="Labs">
-            <h2>My Cybersecurity Labs</h2>
-            
-            <div class="lab">
-              <h3>Lab 1: Wamp Server Configuration, SQL Injection, and PowerShell Exploitation</h3>
-              <p>
-                This lab demonstrates how to configure WampServer, identify SQL injection vulnerabilities, and exploit PowerShell for fileless malware attacks.
-              </p>
-              <a href="https://github.com/nasiyanoobi/Ethical_Hacking_Labs/tree/main/Lab1" target="_blank">View Lab 1 on GitHub</a>
-            </div>
-            
-            
-            <div class="lab">
-              <h3>Lab 2: Social Engineering Tools</h3>
-              <p>
-                This lab explores tools like SET, BeEF, and phishing techniques to simulate social engineering attacks and evaluate browser vulnerabilities.
-              </p>
-              <a href="https://github.com/nasiyanoobi/Ethical_Hacking_Labs/tree/main/Lab2" target="_blank">View Lab 2 on GitHub</a>
-            </div>
-          
-            <div class="lab">
-              <h3>Lab 3: Exploiting Application Vulnerabilities</h3>
-              <p>
-                Demonstrates the exploitation of application vulnerabilities such as XSS, insecure direct object references (IDOR), and HTTP request manipulation using OWASP ZAP.
-              </p>
-              <a href="https://github.com/nasiyanoobi/Ethical_Hacking_Labs/tree/main/Lab3" target="_blank">View Lab 3 on GitHub</a>
-            </div>
+     <!-- Labs Section -->
+     <section id="labs" class="section">
+        <div class="container">
+            <h2>Cybersecurity Labs</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Lab 1: Wamp Server Configuration, SQL Injection, and PowerShell Exploitation.</h3>
+                    <p>This lab demonstrates how to configure WampServer, identify SQL injection vulnerabilities, and exploit PowerShell for fileless malware attacks.</p>            
+                    <a href="https://github.com/nasiyanoobi/Ethical_Hacking_Labs/tree/main/Lab1" target="_blank">View Lab 1</a>
+                </div>
 
-            <!-- Lab 4 -->
-            <div class="lab">
-                <h3>Lab 4: Capturing Hashes, Brute Forcing, and Wireless Testing</h3>
-                <p>
-                This lab demonstrates techniques for capturing NTLM hashes, brute-forcing credentials, and analyzing wireless networks using tools like Responder, Hydra, NetSpot, and Advanced IP Scanner.
-                </p>
-                <a href="https://github.com/nasiyanoobi/Ethical_Hacking_Labs/tree/main/Lab4" target="_blank">View Lab 4 on GitHub</a>
+                <div class="card">
+                    <h3>Lab 2: Social Engineering Tools and Phishing Techniques.</h3>
+                    <p>This lab explores tools like SET, BeEF, and phishing techniques to simulate social engineering attacks and evaluate browser vulnerabilities.</p>
+                    <a href="https://github.com/nasiyanoobi/Ethical_Hacking_Labs/tree/main/Lab2" target="_blank">View Lab 2</a>
+                </div>
+                
+                <div class="card">
+                    <h3>Lab 3: Exploiting Application Vulnerabilities using ZAP, XSS, and URL Manipulation.</h3>
+                    <p>Demonstrates the exploitation of application vulnerabilities such as XSS, insecure direct object references (IDOR), and HTTP request manipulation using OWASP ZAP.</p>
+                    <a href="https://github.com/nasiyanoobi/Ethical_Hacking_Labs/tree/main/Lab3" target="_blank">View Lab 3</a>
+                </div>
+                
+                <div class="card">
+                    <h3>Lab 4: Capturing Hashes, Brute Forcing, and Wireless Testing.</h3>
+                    <p>This lab demonstrates techniques for capturing NTLM hashes, brute-forcing credentials, and analyzing wireless networks using tools like Responder, Hydra, NetSpot, and Advanced IP Scanner.</p>
+                    <a href="https://github.com/nasiyanoobi/Ethical_Hacking_Labs/tree/main/Lab4" target="_blank">View Lab 4</a>
+                </div>
+                
+                <div class="card">
+                    <h3>Lab 5: Exploiting Host Vulnerabilities using SAM, Hashcat, and Shell.</h3>
+                    <p>This lab focuses on exploiting host vulnerabilities, including dumping Windows SAM credentials, cracking passwords with Hashcat, and establishing reverse and bind shells using Metasploit.</p>
+                    <a href="https://github.com/nasiyanoobi/Ethical_Hacking_Labs/tree/main/Lab5" target="_blank">View Lab 5</a>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Lab 5 -->
-            <div class="lab">
-                <h3>Lab 5: Exploiting Host Vulnerabilities using SAM, Hashcat, and Shell</h3>
-                <p>
-                This lab focuses on exploiting host vulnerabilities, including dumping Windows SAM credentials, cracking passwords with Hashcat, and establishing reverse and bind shells using Metasploit.
-                </p>
-                <a href="https://github.com/nasiyanoobi/Ethical_Hacking_Labs/tree/main/Lab5" target="_blank">View Lab 5 on GitHub</a>
-            </div>
-            
-          </section>
-
-           <!-- Portfolio Section -->
-        <section id="portfolio">
-            <h2>Portfolio</h2>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+        <div class="content">
+            <h1>Portfolio</h1>
             <p>As a cybersecurity student, I am continuously working on various projects to enhance my skills and contribute to the cybersecurity community. Below are a few example projects I plan to develop:</p>
             <ul>
-                <li>
-                    <strong>Project 1:</strong> <a href="#" target="_blank">Network Security Analyzer</a> - A tool to monitor and analyze network traffic for potential vulnerabilities.
-                </li>
-                <li>
-                    <strong>Project 2:</strong> <a href="#" target="_blank">Incident Response Playbook</a> - A comprehensive guide designed to help organizations manage cybersecurity incidents effectively.
-                </li>
-                <li>
-                    <strong>Project 3:</strong> <a href="#" target="_blank">Threat Intelligence Dashboard</a> - A dashboard to track, visualize, and analyze threat data from multiple sources.
-                </li>
+                <li><strong>Project 1:</strong> <a href="#" target="_blank">Network Security Analyzer</a> - A tool to monitor and analyze network traffic for potential vulnerabilities.</li>
+                <li><strong>Project 2:</strong> <a href="#" target="_blank">Incident Response Playbook</a> - A comprehensive guide designed to help organizations manage cybersecurity incidents effectively.</li>
+                <li><strong>Project 3:</strong> <a href="#" target="_blank">Threat Intelligence Dashboard</a> - A dashboard to track, visualize, and analyze threat data from multiple sources.</li>
             </ul>
             <p>I am committed to hands-on learning, contributing to open-source projects, and continuously growing my cybersecurity expertise.</p>
-        </section>
-          
+        </div>
+    </section>
 
-        <!-- Resume Section -->
-        <section id="resume">
-            <h2>Resume</h2>
-            <p>Download my <a href="Noobi Asheer.pdf" target="_blank">resume</a>.</p>
-        </section>
+    <!-- Resume Section -->
+    <section id="resume" class="section">
+        <div class="content">
+            <h1>Resume</h1>
+            <a href="Noobi Asheer.pdf" target="_blank" class="btn">Open Resume</a>
+        </div>
+    </section>
 
-                <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a id="email" href="mailto:noobi.asheer98@gmail.com">noobi.asheer98@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/noobi-asheer/" target="_blank" alt="Noobi Asheer's LinkedIn Profile" title="Noobi Asheer's LinkedIn Profile">LinkedIn Profile</a></p>
-            <p>GitHub: <a href="https://github.com/nasiyanoobi" target="_blank" alt="Noobi Asheer's GitHub Profile" title="Noobi Asheer's GitHub Profile">GitHub Profile</a></p>
-        </section>
-        
-    </main>
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="content">
+            <h1>Contact</h1>
+            <p>Email: <a href="mailto:noobi.asheer98@gmail.com" target="_blank" alt="Mail ID" title="Mail ID">noobi.asheer98@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/noobi-asheer/" target="_blank" alt="LinkedIn Profile" title="LinkedIn Profile">LinkedIn</a></p>
+            <p>GitHub: <a href="https://github.com/nasiyanoobi" target="_blank" alt="Github Profile" title="Github Profile">GitHub</a></p>
+        </div>
+    </section>
 
     <!-- Footer Section -->
     <footer>
@@ -138,5 +125,6 @@
 
         });
     </script>
+
 </body>
 </html>
