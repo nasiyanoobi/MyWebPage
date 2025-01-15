@@ -1,55 +1,125 @@
-/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+    color: #444;
+    background-color: #f4f4f9;
 }
 
-header {
-    background-color: #444;
-    color: white;
-    padding: 20px;
-    text-align: center;
+.fixed-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 1000;
+    padding: 1rem;
 }
 
-header h1 {
-    margin: 0;
+.fixed-header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 20px 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
+.fixed-header nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+.fixed-header nav ul li a:hover {
+    color: #00adb5;
 }
 
-main {
-    padding: 20px;
-    background-color: white;
-    margin: 20px;
+.section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    color: #333;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+#about, #labs, #portfolio, #resume, #contact {
+    padding-top: 80px; /* space for fixed header */
+}
+
+#labs {
+    background-color: #f0f0f0;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+a {
+    color: #00adb5;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #005e5b;
+}
+
+.btn {
+    background: #00adb5;
+    padding: 0.8rem 1.5rem;
     border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background 0.3s ease;
 }
 
-section {
-    margin-bottom: 20px;
+.btn:hover {
+    background: #005e5b;
 }
 
+.lab {
+    margin-bottom: 2rem;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lab h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.lab p {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 footer {
     background-color: #444;
     color: white;
@@ -59,29 +129,3 @@ footer {
     bottom: 0;
     width: 100%;
 }
-#labs {
-    margin: 20px;
-    padding: 10px;
-    background-color: white;
-  }
-  
-  .lab {
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-  }
-  
-  .lab h3 {
-    color: #333;
-  }
-  
-  .lab a {
-    text-decoration: none;
-    color: #007bff;
-  }
-  
-  .lab a:hover {
-    text-decoration: underline;
-  }
-  
